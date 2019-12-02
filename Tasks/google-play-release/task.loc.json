@@ -1,9 +1,9 @@
 {
-  "id": "8cf7cac0-620b-11e5-b4cf-8565e60f4d27",
-  "name": "GooglePlayRelease",
+  "id": "22ac4fa3-ebb6-41dc-aac0-441c273fe75a",
+  "name": "GooglePlayReleaseBego",
   "friendlyName": "ms-resource:loc.friendlyName",
   "description": "ms-resource:loc.description",
-  "author": "Microsoft Corporation",
+  "author": "Berenberg",
   "category": "Deploy",
   "visibility": [
     "Build",
@@ -13,10 +13,11 @@
     "npm"
   ],
   "version": {
-    "Major": "2",
-    "Minor": "142",
-    "Patch": "0"
+    "Major": "3",
+    "Minor": "0",
+    "Patch": "3"
   },
+  "preview": true,
   "minimumAgentVersion": "1.83.0",
   "groups": [
     {
@@ -141,6 +142,15 @@
       "helpMarkDown": "ms-resource:loc.input.help.additionalApks"
     },
     {
+      "name": "mappingFilePath",
+      "type": "filePath",
+      "label": "ms-resource:loc.input.label.mappingFilePath",
+      "defaultValue": "",
+      "groupName": "advanced",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.mappingFilePath"
+    },
+    {
       "name": "versionCodeFilterType",
       "type": "pickList",
       "label": "ms-resource:loc.input.label.versionCodeFilterType",
@@ -176,7 +186,7 @@
     }
   ],
   "execution": {
-    "Node": {
+    "Node10": {
       "target": "GooglePlay.js",
       "argumentFormat": ""
     },
@@ -190,6 +200,7 @@
     "InvalidAuthFile": "ms-resource:loc.messages.InvalidAuthFile",
     "FoundMainApk": "ms-resource:loc.messages.FoundMainApk",
     "FoundMultiApks": "ms-resource:loc.messages.FoundMultiApks",
+    "FoundDeobfuscationFile": "ms-resource:loc.messages.FoundDeobfuscationFile",
     "GetNewEditAfterAuth": "ms-resource:loc.messages.GetNewEditAfterAuth",
     "UploadApk": "ms-resource:loc.messages.UploadApk",
     "UpdateTrack": "ms-resource:loc.messages.UpdateTrack",
@@ -209,6 +220,7 @@
     "RequestDetails": "ms-resource:loc.messages.RequestDetails",
     "CannotCreateTransaction": "ms-resource:loc.messages.CannotCreateTransaction",
     "CannotUploadApk": "ms-resource:loc.messages.CannotUploadApk",
+    "CannotUploadDeobfuscationFile": "ms-resource:loc.messages.CannotUploadDeobfuscationFile",
     "CannotDownloadTrack": "ms-resource:loc.messages.CannotDownloadTrack",
     "CannotUpdateTrack": "ms-resource:loc.messages.CannotUpdateTrack",
     "CannotReadChangeLog": "ms-resource:loc.messages.CannotReadChangeLog",

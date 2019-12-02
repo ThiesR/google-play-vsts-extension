@@ -1,12 +1,12 @@
 {
     "manifestVersion": 1.0,
-    "id": "google-play",
-    "name": "Google Play",
-    "version": "2.142.0",
-    "publisher": "ms-vsclient",
+    "id": "google-play-bego",
+    "name": "Google Play Bego",
+    "version": "2.142.3",
+    "publisher": "bego",
     "description": "Provides tasks for continuous delivery to the Google Play Store from TFS/Team Services build or release definitions",
     "categories": [
-        "Build and release"
+        "Azure Pipelines"
     ],
     "targets": [
         {
@@ -36,13 +36,13 @@
     },
     "files": [
         {
-            "path": "_build/Tasks/GooglePlayRelease"
+            "path": "_build/Tasks/GooglePlayReleaseBego"
         },
         {
-            "path": "_build/Tasks/GooglePlayPromote"
+            "path": "_build/Tasks/GooglePlayPromoteBego"
         },
         {
-            "path": "_build/Tasks/GooglePlayIncreaseRollout"
+            "path": "_build/Tasks/GooglePlayIncreaseRolloutBego"
         },
         {
             "path": "images",
@@ -75,7 +75,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "_build/Tasks/GooglePlayRelease"
+                "name": "_build/Tasks/GooglePlayReleaseBego"
             }
         },
         {
@@ -85,7 +85,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "_build/Tasks/GooglePlayPromote"
+                "name": "_build/Tasks/GooglePlayPromoteBego"
             }
         },
         {
@@ -95,7 +95,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "_build/Tasks/GooglePlayIncreaseRollout"
+                "name": "_build/Tasks/GooglePlayIncreaseRolloutBego"
             }
         },
         {

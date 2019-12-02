@@ -20,7 +20,7 @@ node bin/tfxupload.js --installonly
 
 if [ $1 == "create" ] ; then
   echo "Creating VSIX..."
-  tfx extension create --manifest-globs vsts-extension-google-play.json --override '{ "public": true }'
+  tfx extension create --manifest-globs vsts-extension-google-play.json --override '{ "public": false }'
 fi
 
 if [ $1 == "createtest" ] ; then
