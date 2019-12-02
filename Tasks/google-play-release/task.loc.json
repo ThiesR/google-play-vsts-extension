@@ -1,9 +1,9 @@
 {
-  "id": "8cf7cac0-620b-11e5-b4cf-8565e60f4d27",
-  "name": "GooglePlayRelease",
+  "id": "22ac4fa3-ebb6-41dc-aac0-441c273fe75a",
+  "name": "GooglePlayReleaseBego",
   "friendlyName": "ms-resource:loc.friendlyName",
   "description": "ms-resource:loc.description",
-  "author": "Microsoft Corporation",
+  "author": "Berenberg",
   "category": "Deploy",
   "visibility": [
     "Build",
@@ -15,7 +15,7 @@
   "version": {
     "Major": "3",
     "Minor": "0",
-    "Patch": "0"
+    "Patch": "3"
   },
   "preview": true,
   "minimumAgentVersion": "1.83.0",

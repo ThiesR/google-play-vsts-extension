@@ -53,7 +53,10 @@ async function run() {
             console.log(apkFileList);
         }
 
-        let mappingFilePath = tl.getPathInput('mappingFilePath', false, true);
+        let mappingFilePattern = tl.getPathInput('mappingFilePath', false);
+        console.log('Got mapping file pattern: ' + mappingFilePattern);
+        let mappingFilePath = resolveGlobPath(mappingFilePattern);
+        console.log('Got maipping file path  : ' + mappingFilePath);
         console.log(tl.loc('FoundDeobfuscationFile', mappingFilePath));
 
         let versionCodeFilterType: string = tl.getInput('versionCodeFilterType', false) ;
